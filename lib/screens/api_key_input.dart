@@ -40,10 +40,19 @@ class _ApiKeyInputState extends State<ApiKeyInput> {
               }
             },
           ),
-          Container(
+          Padding(
+            padding: const EdgeInsets.all(8.0),
             child: Text(
               "API KEY CAN BE FOUND IN\nhttps://dashboard.heroku.com/account",
               textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Features\n1) Configure Dyno\n2) Configure Config Vars\n3) App Info",
+              textAlign: TextAlign.start,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
