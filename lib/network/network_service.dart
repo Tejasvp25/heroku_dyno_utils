@@ -121,7 +121,7 @@ class NetworkService {
 class CustomInterceptor extends Interceptor {
   @override
   Future onError(DioError err) async {
-    switch (err.response.statusCode) {
+    switch (err.response?.statusCode) {
       case 429:
         throw RateLimitException();
         break;
